@@ -2,4 +2,6 @@ site_name: Version_Switch
 nav:
   - Home: index.md
   - About: about.md
-theme: readthedocs
+theme:
+  name: material  
+# theme: readthedocs
