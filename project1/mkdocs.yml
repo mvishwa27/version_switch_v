@@ -1,7 +1,9 @@
 site_name: Version_Switch
+site_url: https://mvishwa27.github.io/version_switch_v/
 nav:
   - Home: index.md
   - About: about.md
 theme:
-  name: material  
+  name: material
+  custom_dir: theme_overrides  
 # theme: readthedocs
