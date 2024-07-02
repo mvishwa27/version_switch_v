@@ -5,5 +5,9 @@ nav:
   - About: about.md
 theme:
   name: material
-  custom_dir: theme_overrides  
+  custom_dir: theme_overrides
+extra:
+  version:
+    provider: mike
+  
 # theme: readthedocs
