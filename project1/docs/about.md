@@ -6,4 +6,4 @@
 ### content-4
 ### content-5
 ### content-6
-### content-7 -> LATEST
+### content-7
