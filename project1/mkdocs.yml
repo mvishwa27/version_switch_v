@@ -10,7 +10,6 @@ site_url: https://mvishwa27.github.io/version_switch_v/
 nav:
   - Home: index.md
   - About: about.md
-  - EAS_NativeApp_Walk-through: EAS_NativeApp_Walk-through.md
 
 theme:
   name: material
