@@ -1,0 +1,796 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mvishwa27.github.io/version_switch_v/latest/Email_Adapter/">
+      
+      
+        <link rel="prev" href="../about/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.1.18">
+    
+    
+  <title>Versioning</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#email-adapter" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest version.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Version_Switch" class="md-header__button md-logo" aria-label="Version_Switch" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Version_Switch
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Email Adapter
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Version_Switch" class="md-nav__button md-logo" aria-label="Version_Switch" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Version_Switch
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Email Adapter
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Email Adapter
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#email-adapter" class="md-nav__link">
+    Email Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-a-service-definition" class="md-nav__link">
+    Configure a Service Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-operations-for-the-service-definition" class="md-nav__link">
+    Configure Operations for the Service definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Operations for the Service definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-operations" class="md-nav__link">
+    Configure Operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-input-parameters" class="md-nav__link">
+    Request Input Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-output-parameters" class="md-nav__link">
+    Response Output Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#email-adapter" class="md-nav__link">
+    Email Adapter
+  </a>
+  
+    <nav class="md-nav" aria-label="Email Adapter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-a-service-definition" class="md-nav__link">
+    Configure a Service Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-operations-for-the-service-definition" class="md-nav__link">
+    Configure Operations for the Service definition
+  </a>
+  
+    <nav class="md-nav" aria-label="Configure Operations for the Service definition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-operations" class="md-nav__link">
+    Configure Operations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request-input-parameters" class="md-nav__link">
+    Request Input Parameters
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-output-parameters" class="md-nav__link">
+    Response Output Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Email Adapter</h1>
+
+<p>User Guide: <a href="Services.md#integration">Integration</a> &gt; <a href="ConfigureIntegrationService.md">Configure the Integration Service</a> &gt; Email Adapter</p>
+<h2 id="email-adapter">Email Adapter</h2>
+<p>An Email Integration Service empowers a user to send emails (like notification, status mails) from the client app. You can also know the status of the email which was sent before through Email service. The email requests are sent to the Volt MX Foundry server which in-turn redirects them to the Volt MX Engagement server.</p>
+<p>While configuring an Email service, you can pass the email ID, subject , message and even attachments as input parameters based on which the email will be delivered to the respective recipients. However, the client app user can configure the body of the email from the client app or any design time environment.</p>
+<p>Perform the following steps to configure an Email Service:</p>
+<ul>
+<li>Configure a Service Definition for Email Service.</li>
+<li>Configure Operations for the Service definition.</li>
+</ul>
+<blockquote>
+<p><strong><em>Note:</em></strong> This is a static adapter and the default configurations that appear while configuring the operations are sufficient to get the required output from the service. You can leave the remaining fields as is.</p>
+</blockquote>
+<h3 id="configure-a-service-definition">Configure a Service Definition</h3>
+<p>To configure the Email Adapter in the <strong><a href="ConfigureIntegrationService.md">Integration service definition</a></strong>tab, follow these steps:</p>
+<ol>
+<li>In the <strong>Name</strong> field, provide a unique name for your service.</li>
+<li>From the <strong>Service Type</strong> list, select <em>Email</em>.</li>
+<li>In the <strong>Authentication</strong> section, the Use Existing Identity Provider list displays the existing Identity services available in the Foundry App. Select an Identity Service from the list. This will add a security layer onto your Email service. If you select an Identity Service, you must provide appropriate login details to send an email from the client app.</li>
+<li><details close="" markdown="block"><summary>
+    The Advanced section contains the following additional configurations. You can configure them if required:
+    </summary>
+    <table>
+    <tr>
+    <th>Field</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td>Custom Code</td>
+    <td>
+    <p>The name for the request input parameter.</p>
+    <p>To specify dependent JAR, select the JAR containing preprocessor or postprocessor libraries from the drop-down list, or click <b>Upload New</b> to browse the JAR file from your local system. This step allows you to further filter the data sent to the back end.</p>
+    <blockquote><em><b>Important:</b></em> Make sure that you upload a custom JAR file that is built on the same JDK version used for installing Volt MX Foundry Integration.<br/><br/>For example, if the JDK version on the machine where Volt MX Foundry Integration is installed is 1.6, you must use the same JDK version to build your custom jar files. If the JDK version is different, an unsupported class version error will appear when a service is used from a device.</blockquote>
+    </td>
+    </tr><br />
+     <tr>
+    <td>Throttling</td>
+    <td>
+    <p>API throttling enables you to limit the number of request calls within a minute. If an API exceeds the throttling limit, it will not return the service response.</p><br />
+     <ul>
+    <li><b>To specify throttling in Volt MX Foundry Console, follow these steps:</b></li>
+    <ol>
+    <li>In the<b>Total Rate Limit</b> text box, enter a required value. With this value, you can limit the number of requests configured in your Volt MX Foundry console in terms of Total Rate Limit.</li><br />
+     <li>In the<b>Rate Limit Per IP</b> text box, enter a required value. With this value, you can limit the number of IP address requests configured in your Volt MX Foundry console in terms of Per IP Rate Limit.</li>
+    </ol>
+    </ul>
+    <ul>
+    <li><b>To override throttling in App Services Console, refer to</b> <a href="API_Throttling_Override.html#override-api-throttling-configuration">Override API Throttling Configuration.</a></li>
+    </ul>
+    <blockquote><em><b>Note:</b></em> Enable API throttling in a clustered environment by configuring the VOLTMX_SERVER_NUMBER_OF_NODES property in the <b>server_configuration</b> table available in Admin database. This property indicates the number of nodes configured in the cluster. The default value is 1.</blockquote>
+    </td>
+    </tr>
+    </table>
+    </details></li>
+</ol>
+<blockquote>
+<p><strong><em>Note:</em></strong> All options in the Advanced section are optional.</p>
+</blockquote>
+<ol>
+<li>
+<p>In the <strong>Description</strong> field, provide a suitable description for the service.</p>
+</li>
+<li>
+<p>Click <strong>Save</strong> or <strong>Save and Add Operation</strong> to save your service definition.</p>
+</li>
+</ol>
+<h3 id="configure-operations-for-the-service-definition">Configure Operations for the Service definition</h3>
+<ol>
+<li>Click <strong>Save and Add Operation</strong> in your service definition page to save your service definition and display the New Operation tab for adding operations.<br />
+    OR<br />
+    Click Add Operation to add a new operation or from the tree in the left pane, click Add &gt; Add New Operation.</li>
+<li>In <strong>Operations List</strong> tab, select the required operation and click <strong>Add Operation</strong>. A new operation is created and listed in the Operations List tab with Email_Operations as default prefix. The operations available are:<ul>
+<li>sendEmail - You can use this operation to configure an email template which will be used by the client app to send emails.</li>
+<li>getEmailStatus - You can use this operation to know the status of the emails that were sent.</li>
+</ul>
+</li>
+<li>Select the new operation that was added to configure the operation. Refer to the following sections to know more about the configurations you can do for each operation.</li>
+</ol>
+<h4 id="configure-operations">Configure Operations</h4>
+<p>In the sendEmail operation you can configure the details like Message, Attachments, and more. The details defined here act as the template for the email.</p>
+<p>Perform following steps to configure a sendEmail or getEmailStatus operation:</p>
+<ul>
+<li>Click the required operation from the operations list. The operation details page appears.</li>
+<li>
+<p>Provide the following information in the details page:</p>
+<p><table>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>The operation name appears in the Name field. You can modify the name, if required.</td>
+</tr>
+<tr>
+<td>Operation Security Level</td>
+<td>
+<p>It specifies how a client must authenticate to invoke this operation.</p>
+<details close="" markdown="block"><summary>
+Select one of the following security operations in the Operation Security Level field.</summary>
+<ul>
+<li><b>Authenticated App User</b> – It restricts the access to clients who have successfully authenticated using an Identity Service associated with the app.</li>
+<li><b>Anonymous App User</b> – It allows the access from trusted clients that have the required App Key and App Secret. Authentication through an Identity Service is not required.</li>
+<li><b>Public</b> – It allows any client to invoke this operation without any authentication. This setting does not provide any security to invoke this operation and you should avoid this authentication type if possible.</li>
+<li><b>Private</b> – It blocks the access to this operation from any external client. It allows invocation either from an Orchestration/Object Service, or from the custom code in the same run-time environment.</li>
+</ul>
+</details>
+<blockquote>
+<em><b>Note:</b></em> The field is set to Authenticated App User, by default.
+</blockquote>
+</td>
+</tr>
+<tr>
+<td>Mapped To</td>
+<td>Displays the operation with which the adapter is linked with in the back end. This field is non editable.</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>Displays the type of connector (service or object) with which this operation is linked with. This field is non editable.</td>
+</tr>
+</table>  </p>
+</li>
+<li>
+<p>The Advanced section contains the following additional configurations related to request (or) response operations. You can configure them if required:
+<br />
+<table>
+    <tr>
+    <td>Custom Code Invocation</td>
+    <td>You can add pre and post processing logic to services to modify the request inputs. When you test, the services details of various stages in the service execution are presented to you for better debugging. All options in the Advanced section are optional. For more details, refer to <a href="Java_Preprocessor_Postprocessor_.html">Preprocessor and Postprocessor</a>.</td>
+    </tr>    
+    <tr>
+    <td>Additional Configuration Properties</td>
+    <td>Additional Configuration Properties allows you to configure service call time out cache response. For information on different types of configuration properties, refer <a href="Java_Preprocessor_Postprocessor_.html#timeout_cachable">Properties</a>.</td>
+    </tr>    
+    <tr>
+    <td>Front-end API</td>
+    <td>Front-end API allows you map your endpoint (or) backend URL of an operation to a front-end URL. For detailed information, refer <a href="FrontEndAPI.html">Custom Front-end URL</a>.</td>
+    </tr>    
+    <tr>
+    <td>Custom Code Invocation</td>
+    <td>Using Server Events you can configure this service to trigger or process server side events. For detailed information, refer <a href="ServerEvents.html">Server Events</a>.</td>
+    </tr>
+  </table>
+</p>
+</li>
+</ul>
+<blockquote>
+<p><strong><em>Note:</em></strong> All options in the Advanced section for operations are not mandatory. </p>
+</blockquote>
+<h3 id="request-input-parameters">Request Input Parameters</h3>
+<p>In the Request Input tab, you can configure the parameters like To, CC, Message, Attachments and more which are required to send an email. The details defined here act as the template for the email. You can define the value of each parameter here directly, or provide the information of the source from where the information can be retrieved.</p>
+<p>You can define the Body and Header related input parameters from the Request Input tab. By default, the Body tab is selected. You can do the following to configure the input parameters in the Body tab:</p>
+<table>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name for the request input parameter.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>
+<p>The options available in the Value list determine the source from where the value of the input parameter must be retrieved.</p>
+<details close="" markdown="block"><summary>Select request or session or Identity.</summary>
+<ul>
+<li><b>Request</b> – It denotes that the value for the input parameter is available in the request received from the client app (device request). The default value will be honored if the request does not have the value. The Test value is honored only when you test the service from Foundry Console.</li>
+<li><b>Session</b> – If you select Session, the value of the input parameter will be picked up from session context. The Default and Test value fields are disabled.</li>
+<li><b>Constant</b> –Select Constant if you want to define the value for the input parameter in the Volt MX Foundry console directly.</li>
+<li><b>Identity</b> – Select Identity if you want to retrieve the request input parameters from the identity provider response attributes. For example - If an identity provider responds with a profile that has userid as one of its attributes after a successful login , please use ‘profile.userid’ as value to pass it as request parameter to the backend. This will help to filter the response based on the value mentioned in ‘userid’. For more details to configure identity filters, refer to <a href="Identity_Filters_Integration.html">Enhanced Identity Filters - Integration Services.</a></li>
+</ul>
+<blockquote>
+<em><b>Note:</b></em> When you start editing this field, dependent identity services are auto populated.
+</blockquote> 
+</details>
+<blockquote>
+<em><b>Note:</b></em> The field is set to Request, by default.
+</blockquote>
+<blockquote>
+<em><b>Note:</b></em> For more information on Externalizing Identity Services, refer to <a href="Replacing_Identity_Services.html">Replace the Identity Service references in a Foundry app</a>.
+</blockquote>    
+</td>
+</tr>
+<tr>
+<td>Test Value</td>
+<td>A test value is used for testing the service.</td>
+</tr>
+<tr>
+<td>Default Value</td>
+<td>The default value is used in the run-time when the service cannot find the defined header parameter value.</td>
+</tr>  
+<tr>
+<td>Data Type</td>
+<td>
+<details close="" markdown="block"><summary>Select one of the following data types.</summary>
+<ul>
+<li><b>String</b> – A combination of alpha-numeric and special characters. Supports all formats including UTF-8 and UTF-16 with no maximum size limit.</li>
+<li><b>Date</b> – A value that is in date format.</li>
+<li><b>Record</b> –A value is in an array. You must specify appropriate Record ID if the Record is the data type.</li>
+<li><b>Boolean</b> – A value that can be true or false.</li>          
+<li><b>Number</b> –An integer or a floating number.</li>                     
+<li><b>Collection</b> –A group of data, also referred as data set.</li> 
+</ul>
+</details>
+</td>
+</tr>  
+<tr>
+<td>Collection ID</td>
+<td>Determines the location of the input value if there is a list of collections in the input received.</td>
+</tr>  
+<tr>
+<td>Record ID</td>
+<td>Determines the location of the input value if there is an array of records in the input received.</td>
+</tr>  
+<tr>
+<td>Description</td>
+<td>Enter the description for the request.</td>
+</tr>
+</table>
+
+<p>The following input parameters are displayed by default for <strong>Email_Operations_sendEmail</strong> operation:</p>
+<ul>
+<li>To</li>
+<li>CC</li>
+<li>message</li>
+<li>subject</li>
+<li>attachments</li>
+</ul>
+<p>The following input parameters are displayed by default for <strong>Email_Operations_getEmailStatus</strong> operation:</p>
+<ul>
+<li>requestID</li>
+</ul>
+<p>Click the <strong>Header</strong> tab to configure the header parameters. The parameters configured here will be appended to the header of the input request. Configure the following fields to define header parameters:</p>
+<table>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name for the request input parameter.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>
+<p>The options available in the Value list determine the source from where the value of the input parameter must be retrieved.</p>
+<details close="" markdown="block"><summary>Select request or session or Identity.</summary>
+<ul>
+<li><b>Request</b> – It allows the user to configure the default and test value. The default value is honored if the request does not have the input value. The Test value is honored only when you test the service from Foundry Console.</li>
+<li><b>Session</b> – It represents that the header parameters will be picked up from the session context. The Default and Test value fields are disabled.</li>
+<li><b>Constant</b> – It denotes that you can define a constant value for the header. The Default and Test value fields are disabled.</li>
+<li><b>Expression</b> – t represents that you can configure velocity template expressions for the value of the header. The Default and Test value fields are disabled.. For example, $Session.param1 $Request.param2 where 'param1' is coming from session scope and 'param2' is coming from request scope.</li>
+</ul>
+</details>    
+<blockquote>
+<em><b>Note:</b></em> The field is set to Request, by default.
+</blockquote>      
+</td>
+</tr>
+<tr>
+<td>Test Value</td>
+<td>A test value is used for testing the service.</td>
+</tr>
+<tr>
+<td>Default Value</td>
+<td>The default value is used in the run-time when the service cannot find the defined header parameter value.</td>
+</tr>    
+<tr>
+<td>Description</td>
+<td>Enter the description for the request.</td>
+</tr>
+</table>
+
+<h3 id="response-output-parameters">Response Output Parameters</h3>
+<p>In the Response Output tab, you can configure the output parameters that you are expecting the service to return after the service is executed.</p>
+<p>By default, the following output parameters are returned from the back end for Email_Operations_sendEmail operation:</p>
+<ul>
+<li>Email Result</li>
+<li>requestId</li>
+<li>message</li>
+</ul>
+<p>By default, the following output parameters are returned from the back end for Email_Operations_getEmailStatus operation:</p>
+<ul>
+<li>Email Status</li>
+<li>Email Count</li>
+<li>Message Response</li>
+</ul>
+<p>You can configure the following information about each output parameter:</p>
+<table>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Name</td>
+<td>The name for the request input parameter.</td>
+</tr>  
+<tr>
+<td>Path</td>
+<td>Determines the path where you want to store the output value from the response.</td>
+</tr>
+<tr>
+<td>Data Type</td>
+<td>
+<details close="" markdown="block"><summary>Select one of the following data types.</summary> 
+<ul>
+<li><b>String</b> – A combination of alpha-numeric and special characters. Supports all formats including UTF-8 and UTF-16 with no maximum size limit.</li>
+<li><b>Date</b> – A value that is in date format.</li>
+<li><b>Record</b> –A value is in an array. You must specify appropriate Record ID if the Record is the data type.</li>
+<li><b>Boolean</b> – A value that can be true or false.</li>          
+<li><b>Number</b> –An integer or a floating number.</li>                     
+<li><b>Collection</b> –A group of data, also referred as data set.</li>
+</ul>
+</details>       
+</td>
+</tr>
+<tr>
+<td>Collection ID</td>
+<td>Determines the location of the output value if there is a list of collections in the output received.</td>
+</tr>
+<tr>
+<td>Record ID</td>
+<td>Determines the location of the output value if there is an array of records in the output received.</td>
+</tr>    
+<tr>
+<td>Description</td>
+<td>Enter the description for the request.</td>
+</tr>
+</table>
+
+<p>Other common options available in the <strong>Request Input</strong> and <strong>Response Output</strong> tabs are as follows:</p>
+<ul>
+<li><strong>Add Parameter</strong>: Click <strong>Add Parameter</strong>  to add an entry (if the entries for input and the output tabs does not exist).</li>
+<li><strong>Copy, Paste</strong>: Select the check box of an entry, and click <strong>Copy</strong> and <strong>Paste</strong>, if you want to make duplicate entries.</li>
+<li><strong>Delete</strong>: Select the check box of an entry and click <strong>Delete</strong>, if you want to delete an entry.</li>
+<li><strong>Enable pass-through</strong>: Select the <strong>Enable pass-through</strong> check box if you want to forward the body of the client's request to backend as it is. For more details on API Proxy service, refer to <a href="#APIProxyCheckBox"></a><a href="API_Proxy_Adapter.md#how-to-enable-pass-through-proxy-for-operations">How to Enable Pass-through Proxy for Operations</a>.</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
