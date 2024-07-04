@@ -10,6 +10,7 @@ site_url: https://mvishwa27.github.io/version_switch_v/
 nav:
   - Home: index.md
   - About: about.md
+  - Email Adapter: Email_Adapter.md
 
 theme:
   name: material
