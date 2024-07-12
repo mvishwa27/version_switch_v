@@ -1,7 +1,6 @@
 
 User Guide: [Integration](Services.md#integration) \> [Configure the Integration Service](ConfigureIntegrationService.md) > Email Adapter
 
-# v9.5
 
 ## Email Adapter - v9.2
 
