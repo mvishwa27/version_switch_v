@@ -4,6 +4,8 @@ User Guide: [Integration](Services.md#integration) \> [Configure the Integration
 
 ## Email Adapter - v9.2.1
 
+### Same change applies to both 9.2.1 and 9.5.1 versions.
+
 An Email Integration Service empowers a user to send emails (like notification, status mails) from the client app. You can also know the status of the email which was sent before through Email service. The email requests are sent to the Volt MX Foundry server which in-turn redirects them to the Volt MX Engagement server.
 
 While configuring an Email service, you can pass the email ID, subject , message and even attachments as input parameters based on which the email will be delivered to the respective recipients. However, the client app user can configure the body of the email from the client app or any design time environment.
